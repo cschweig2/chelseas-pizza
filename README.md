@@ -27,13 +27,16 @@ _There are no known bugs at this time._
 
 ## Test Specs
 
-Describe: toppingChoice();
+Describe: calculateCost();
 
 Test: "It detects if the user chose pepperoni as the topping."<br>
-Expect(pizzaChoice.toppingChoice()).toEqual("pepperoni"); <br>
+Expect(pizzaChoice.calculateCost()).toEqual("pepperoni"); <br>
 
 Test: "It will add $4 to the total cost of the pizza if the user chooses pepporoni as a topping."<br>
-Expect(pizzaChoice.toppingChoice()).toEqual(16);<br>
+Expect(pizzaChoice.calculateCost()).toEqual(16);<br>
+
+Test: "It will add $4 to the total cost of the pizza if the user chooses large instead of medium." <br>
+Expect(pizzaChoice.calculateCost()).toEqual(20);<br>
 
 
 

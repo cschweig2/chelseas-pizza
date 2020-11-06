@@ -5,17 +5,19 @@ function Pizza(topping, size) {
   this.totalCost = 12;
 }
 
-let pepCost = 4;
-let pizzaChoice = new Pizza("pepperoni", "medium");
+let pizzaChoice = new Pizza("pepperoni", "large");
 
 
-Pizza.prototype.toppingChoice = function() {
+Pizza.prototype.calculateCost = function() {
   if (this.topChoice === "pepperoni") {
-    this.totalCost += pepCost;
+    this.totalCost += 4;
+  }
+  if (this.size === "large") {
+    this.totalCost += 4;
   }
 }
 
-pizzaChoice.toppingChoice();
+pizzaChoice.calculateCost();
 
 console.log(pizzaChoice.totalCost)
 
