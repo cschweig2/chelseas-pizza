@@ -10,6 +10,7 @@ let pizzaChoice = new Pizza("pepperoni", "medium");
 
 Pizza.prototype.toppingChoice = function() {
   if (this.topChoice === "pepperoni") {
-    console.log("pepperoni");
+    this.totalCost += pepCost;
   }
 }
+
