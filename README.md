@@ -6,7 +6,7 @@
 
 ## Description
 
-_This application allows users to build their preferred pizza based on size and topping selection. The user will then be given a total cost for their pizza._
+_This application allows users to build their preferred pizza based on size and topping selection. The user will then be given a total cost for their pizza. There is no extra charge for choosing plain (no toppings) or choosing the medium size pizza._
 
 ## Setup/Installation Requirements
 ### View Online
@@ -40,11 +40,6 @@ Expect(pizzaChoice.calculateCost()).toEqual(16);<br>
 
 Test: "It will add $6 to the total cost of the pizza if the user chooses "sausage and peppers" as a topping." <br>
 Expect(pizzaChoice.calculateCost()).toEqual(18);<br>
-
-
-
-
-
 
 
 ## Support and contact details
