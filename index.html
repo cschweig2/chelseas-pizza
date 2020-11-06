@@ -12,16 +12,27 @@
     <div class="container">
       <h1>Build your pizza order</h1>
       <div class="row">
-        <div class="col-6">
+        <div class="col-6" id="spacing">
           <h3>Select Your Toppings</h3>
           <button type="submit" id="plain" class="btn btn-dark">No Toppings</button>
           <button type="submit" id="pepperoni" class="btn btn-dark">Pepperoni</button>
           <button type="submit" id="sausage" class="btn btn-dark">Sausage</button>
         </div>
-        <div class="col-6">
+        <div class="col-6" id="spacing">
           <h3>Select Your Size</h3>
           <button type="submit" id="size-medium" class="btn btn-dark">Medium</button>
           <button type="submit" id="size-large" class="btn btn-dark">Large</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6" id="spacing">
+          <h3>Your Order Total</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <button type="submit" id="calculate" class="btn btn-dark">Calculate Cost</button>
+          <h3>$<span id="total-cost"></span></h3>
         </div>
       </div>
     </div>

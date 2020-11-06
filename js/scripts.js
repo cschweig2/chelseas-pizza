@@ -1,15 +1,21 @@
+// Business Logic ---------------
+
 function Pizza(topping, size) {
-  this.topChoices = topping;
+  this.topChoices = [];
   this.size = size;
   this.totalCost = 12;
+  this.topping = topping;
 }
 
-let pizzaChoice = new Pizza("sausage", "medium");
+let pizzaChoice = new Pizza();
 
 Pizza.prototype.addTopping = function() {
   this.topChoices.push(this.topping);
-  return this.topChoices;
+  console.log(this.topChoices);
+  return;
 }
+
+pizzaChoice.addTopping();
 
 Pizza.prototype.calculateCost = function() {
   for (i = 0, len = this.topChoices.length; i < len; i++) {
@@ -25,3 +31,36 @@ Pizza.prototype.calculateCost = function() {
   }
   return this.totalCost;
 }
+
+// UI Logic --------------------
+
+$(document).ready(function() {
+  $("button#plain").click(function(event) {
+    event.preventDefault();
+    pizzaChoice.topping = "plain";
+    pizzaChoice.addTopping();
+  });
+  $("button#pepperoni").click(function(event) {
+    event.preventDefault();
+    pizzaChoice.topping = "pepperoni";
+    pizzaChoice.addTopping();
+  });
+  $("button#sausage").click(function(event) {
+    event.preventDefault();
+    pizzaChoice.topping = "sausage";
+    pizzaChoice.addTopping();
+  });
+  $("button#size-medium").click(function(event) {
+    event.preventDefault();
+    pizzaChoice.size = "medium";
+  });
+  $("button#size-large").click(function(event) {
+    event.preventDefault();
+    pizzaChoice.size = "large";
+  });
+  $("button#calculate").click(function(event) {
+    event.preventDefault();
+    pizzaChoice.calculateCost();
+    $("#total-cost").push(this.totalCost);
+  });
+});
