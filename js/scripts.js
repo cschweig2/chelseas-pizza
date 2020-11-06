@@ -7,9 +7,10 @@ function Pizza(topping, size) {
   this.topping = topping;
 }
 
-let pizzaChoice = new Pizza();
+let pizzaChoice = new Pizza("plain", "medium");
 
 Pizza.prototype.addTopping = function() {
+  if (this.topChoices.length <= 2)
   this.topChoices.push(this.topping);
   console.log(this.topChoices);
   return;
@@ -29,8 +30,12 @@ Pizza.prototype.calculateCost = function() {
   if (this.size === "large") {
     this.totalCost += 4;
   }
+  console.log(this.totalCost);
   return this.totalCost;
 }
+
+
+
 
 // UI Logic --------------------
 
@@ -61,6 +66,6 @@ $(document).ready(function() {
   $("button#calculate").click(function(event) {
     event.preventDefault();
     pizzaChoice.calculateCost();
-    $("#total-cost").push(this.totalCost);
+    $("#total-cost").text(this.totalCost);
   });
 });

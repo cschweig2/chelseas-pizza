@@ -10,6 +10,7 @@ function Pizza(topping, size) {
 let pizzaChoice = new Pizza("plain", "medium");
 
 Pizza.prototype.addTopping = function() {
+  if (this.topChoices.length <= 2)
   this.topChoices.push(this.topping);
   return this.topChoices;
 }
@@ -38,3 +39,17 @@ Pizza.prototype.calculateCost = function() {
 
 
 pizzaChoice.calculateCost();
+
+
+Pizza.prototype.resetCost() {
+  this.totalCost = 12;
+  this.topChoices = [];
+  this.size = "medium"
+}
+
+
+// the options trade out 
+// the options selected appear on the page
+// user can delete options?
+// need to make calculated cost appear in correct field on page
+// check console to make sure the cost is being calculated

@@ -46,6 +46,9 @@ Describe: addTopping();
 Test: "It adds the user's chosen topping to the array of topping choices."
 Expect(pizzaChoice.addTopping()).toEqual(["pepperoni", "sausage"]);
 
+Test: "It will only allow 1 instance of each topping in the array of topping choices."
+Expect(pizzaChoice.addTopping()).toEqual(["pepperoni", "sausage"]);
+
 ## Support and contact details
 
 _If you run into any issues, you can contact the creator at cschweig2@gmail.com, or make contributions to the code on GitHub via forking and creating a new branch._
