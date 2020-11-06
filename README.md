@@ -1,4 +1,4 @@
-# Chelsea's NY-Style Pizza Website
+# Chelsea's SFNJ Sizzle Apizza Pizza Website
 
 #### Code Review for Epicodus, Last Updated 11.06.2020
 
@@ -27,10 +27,13 @@ _There are no known bugs at this time._
 
 ## Test Specs
 
-Describe: pizzaOrder();
+Describe: toppingChoice();
 
-Test: "It returns a price based on what toppings and pizza size the user selects."<br>
-Expect(roboger("a")).toEqual("Please enter numbers only.");
+Test: "It detects if the user chose pepperoni as the topping."<br>
+Expect(pizzaChoice.toppingChoice()).toEqual("pepperoni"); <br>
+
+
+
 
 
 
