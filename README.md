@@ -11,19 +11,22 @@ _This application allows users to build their preferred pizza based on size and 
 ## Setup/Installation Requirements
 ### View Online
 1. _Open the webpage at https://cschweig2.github.io/chelseas-pizza._
-2. _Begin building your pizza_
-** more info here..
+2. _Select your toppings: plain, pepperoni, sausage, or you may choose both pepperoni and sausage._<br>
+2a. _If you add pepperoni and sausage, but decide you only want to choose one, you may either select "plain", or click the "Reset Pizza Order" button located below the total cost._
+3. _Select your pizza size: medium or large._
+4. _Once the topping and size selections are made, click the "Calculate Cost" button below._
+5. _You will find your total pizza cost below the "Calculate Cost" button._
 
 ### View locally (on computer)
 1. _Open web browser and go to https://github.com/cschweig2/chelseas-pizza_
 2. _After clicking the green "code" button, you can copy the URL for the repository._
-3. _Open a terminal window, such as Command Prompt or Git Bash
-  3a. Type in this command: "git clone", followed by the URL you just copied. The full command should look like this: "git clone https://github.com/cschweig2/chelseas-pizza"._
+3. _Open a terminal window, such as Command Prompt or Git Bash._<br>
+  3a. _Type in this command: "git clone", followed by the URL you just copied. The full command should look like this: "git clone https://github.com/cschweig2/chelseas-pizza"._
 4. _You may view the website displaying the application by clicking the index.html file or view the code on your favorite text editor, such as Visual Studio Code._
 
 ## Known Bugs
 
-_There are no known bugs at this time._
+_You can click the "Calculate Cost" button repeatedly and it will continue adding to the total cost until you click the "Reset Pizza Order" button._
 
 ## Test Specs
 
@@ -51,7 +54,7 @@ Expect(pizzaChoice.addTopping()).toEqual(["pepperoni", "sausage"]);<br>
 
 Describe: resetCost();<br>
 
-Test: "It resets the pizza order and returns to default options with a total of $0."<br>
+Test: "It resets the pizza order and returns to default options with a total of $15."<br>
 Expect(pizzaChoice.resetCost()).toEqual(["plain", "medium"]);<br>
 
 Describe: addPlain();<br>

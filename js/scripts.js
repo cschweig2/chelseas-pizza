@@ -3,7 +3,7 @@
 function Pizza(topping, size) {
   this.topChoices = [];
   this.size = size;
-  this.totalCost = 12;
+  this.totalCost = 15;
   this.topping = topping;
 }
 
@@ -44,7 +44,7 @@ Pizza.prototype.calculateCost = function() {
 }
 
 Pizza.prototype.resetCost = function() {
-  this.totalCost = 12;
+  this.totalCost = 15;
   this.topChoices = [];
   this.size = "medium";
   this.topping = "plain";
