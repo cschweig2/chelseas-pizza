@@ -15,7 +15,14 @@ Pizza.prototype.addTopping = function() {
   return this.topChoices;
 }
 
-pizzaChoice.addTopping();
+// pizzaChoice.addTopping();
+
+Pizza.prototype.addPlain = function() {
+  this.topChoices = [];
+  pizzaChoice.topping = "plain";
+  this.topChoices.push(this.topping);
+  return this.topChoices;
+}
 
 // pizzaChoice.topping = "pepperoni";
 

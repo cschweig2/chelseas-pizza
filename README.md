@@ -32,13 +32,13 @@ Describe: calculateCost();
 Test: "It detects if the user chose pepperoni as the topping."<br>
 Expect(pizzaChoice.calculateCost()).toEqual("pepperoni"); <br>
 
-Test: "It will add $4 to the total cost of the pizza if the user chooses "pepporoni" as a topping."<br>
+Test: "It will add $4 to the total cost of the pizza if the user chooses 'pepporoni' as a topping."<br>
 Expect(pizzaChoice.calculateCost()).toEqual(16);<br>
 
 Test: "It will add $4 to the total cost of the pizza if the user chooses large instead of medium." <br>
 Expect(pizzaChoice.calculateCost()).toEqual(16);<br>
 
-Test: "It will add $6 to the total cost of the pizza if the user chooses "sausage" as a topping." <br>
+Test: "It will add $6 to the total cost of the pizza if the user chooses 'sausage' as a topping." <br>
 Expect(pizzaChoice.calculateCost()).toEqual(18);<br>
 
 Describe: addTopping();<br>
@@ -51,8 +51,13 @@ Expect(pizzaChoice.addTopping()).toEqual(["pepperoni", "sausage"]);<br>
 
 Describe: resetCost();<br>
 
-Test: "It resets the pizza order to return to default options and base cost of pizza."<br>
+Test: "It resets the pizza order and returns to default options with a total of $0."<br>
 Expect(pizzaChoice.resetCost()).toEqual(["plain", "medium"]);<br>
+
+Describe: addPlain();<br>
+
+Test: "It will remove the other topping options and replace them with 'plain'."<br>
+Expect(pizzaChoice.addPlain()).toEqual(["plain"]);
 
 ## Support and contact details
 
