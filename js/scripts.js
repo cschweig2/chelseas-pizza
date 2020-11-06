@@ -13,12 +13,10 @@ Pizza.prototype.addTopping = function() {
   if (this.topChoices.length <= 1 && this.topChoices[0] === "plain"){
     this.topChoices.shift();
     this.topChoices.push(this.topping);
-    console.log(this.topChoices);
     return;
   }
   if (this.topChoices.length <= 1) {
     this.topChoices.push(this.topping);
-    console.log(this.topChoices);
     return;
   }
 }
@@ -42,10 +40,8 @@ Pizza.prototype.calculateCost = function() {
   if (this.size === "large") {
     this.totalCost += 4;
   }
-  console.log(this.totalCost);
   return this.totalCost;
 }
-
 
 Pizza.prototype.resetCost = function() {
   this.totalCost = 12;

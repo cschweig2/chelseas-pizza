@@ -10,7 +10,8 @@
   <body>
     <h1 class="jumbotron">Chelsea's SFNJ Sizzle Apizza</h1>
     <div class="container">
-      <h1>Build your pizza order</h1>
+      <p id="intro">We are a different kind of pizza parlor. Heavily influenced by the East coast way of pizza-making, we offer thin-crust pizza with super fresh ingredients. Our dough is made in-house and fermented to perfection, our cheese is sourced from pasture-raised, organic cows, and our sauce is made from only USDA Organic tomatoes. Open daily from noon to 9:00 PM.</p>
+      <h1>Build your pizza order!</h1>
       <div class="row">
         <div class="col-6" id="spacing">
           <h3>Select Your Toppings</h3>
@@ -18,18 +19,22 @@
           <button type="submit" id="pepperoni" class="btn btn-dark">Pepperoni</button>
           <button type="submit" id="sausage" class="btn btn-dark">Sausage</button>
           <h3>Your Selected Toppings</h3>
-          <ul id="toppings">
+          <div class="card">
+            <div id="toppings">
 
-          </ul>
+            </div>
+          </div>
         </div>
         <div class="col-6" id="spacing">
           <h3>Select Your Size</h3>
           <button type="submit" id="size-medium" class="btn btn-dark">Medium</button>
           <button type="submit" id="size-large" class="btn btn-dark">Large</button>
           <h3>Your Selected Size</h3>
-          <ul id="size">
-            
-          </ul>
+          <div class="card">
+            <div id="size">
+
+            </div>
+          </div>
         </div>
       </div>
       <div class="row">
@@ -45,6 +50,8 @@
         </div>
       </div>
     </div>
+    <br>
+    <br>
   </body>
   <footer>
     <p><strong>Copyright © 2020 Chelsea Becker</strong></p>
