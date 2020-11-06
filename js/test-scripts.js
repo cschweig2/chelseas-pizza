@@ -41,11 +41,15 @@ Pizza.prototype.calculateCost = function() {
 pizzaChoice.calculateCost();
 
 
-Pizza.prototype.resetCost() {
+Pizza.prototype.resetCost = function() {
   this.totalCost = 12;
   this.topChoices = [];
-  this.size = "medium"
+  this.size = "medium";
 }
+
+// Pizza.prototype.removeTopping() {
+
+// }
 
 
 // the options trade out 

@@ -16,8 +16,6 @@ Pizza.prototype.addTopping = function() {
   return;
 }
 
-pizzaChoice.addTopping();
-
 Pizza.prototype.calculateCost = function() {
   for (i = 0, len = this.topChoices.length; i < len; i++) {
     if (this.topChoices[i] === "pepperoni") {
@@ -35,6 +33,11 @@ Pizza.prototype.calculateCost = function() {
 }
 
 
+Pizza.prototype.resetCost = function() {
+  this.totalCost = 12;
+  this.topChoices = [];
+  this.size = "medium";
+}
 
 
 // UI Logic --------------------
@@ -67,5 +70,9 @@ $(document).ready(function() {
     event.preventDefault();
     pizzaChoice.calculateCost();
     $("#total-cost").text(this.totalCost);
+  });
+  $("button#reset").click(function(event) {
+    event.preventDefault();
+    pizzaChoice.resetCost();
   });
 });

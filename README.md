@@ -41,13 +41,18 @@ Expect(pizzaChoice.calculateCost()).toEqual(16);<br>
 Test: "It will add $6 to the total cost of the pizza if the user chooses "sausage" as a topping." <br>
 Expect(pizzaChoice.calculateCost()).toEqual(18);<br>
 
-Describe: addTopping();
+Describe: addTopping();<br>
 
-Test: "It adds the user's chosen topping to the array of topping choices."
-Expect(pizzaChoice.addTopping()).toEqual(["pepperoni", "sausage"]);
+Test: "It adds the user's chosen topping to the array of topping choices."<br>
+Expect(pizzaChoice.addTopping()).toEqual(["pepperoni", "sausage"]);<br>
 
-Test: "It will only allow 1 instance of each topping in the array of topping choices."
-Expect(pizzaChoice.addTopping()).toEqual(["pepperoni", "sausage"]);
+Test: "It will only allow 1 instance of each topping in the array of topping choices."<br>
+Expect(pizzaChoice.addTopping()).toEqual(["pepperoni", "sausage"]);<br>
+
+Describe: resetCost();<br>
+
+Test: "It resets the pizza order to return to default options and base cost of pizza."<br>
+Expect(pizzaChoice.resetCost()).toEqual(["plain", "medium"]);<br>
 
 ## Support and contact details
 
