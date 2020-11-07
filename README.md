@@ -22,7 +22,7 @@ _This application allows users to build their preferred pizza based on size and 
 1. _Open web browser and go to https://github.com/cschweig2/chelseas-pizza_
 2. _After clicking the green "code" button, you can copy the URL for the repository._
 3. _Open a terminal window, such as Command Prompt or Git Bash._<br>
-  3a. _Type in this command: "git clone", followed by the URL you just copied. The full command should look like this: "git clone https://github.com/cschweig2/chelseas-pizza"._
+  3a. _Type in this command: "git clone", followed by the URL you just copied. The full command should look like this: "git clone https://github.com/cschweig2/chelseas-pizza.git"._
 4. _You may view the website displaying the application by clicking the index.html file or view the code on your favorite text editor, such as Visual Studio Code._
 
 ## Known Bugs
