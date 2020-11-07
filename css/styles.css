@@ -7,7 +7,9 @@
 
 body {
   background-color: rgb(129, 68, 68);
+  background-size: cover;
   background-image: url("../img/pizza2.jpg");
+  background-attachment: fixed;
 }
 
 h1 {
@@ -28,16 +30,16 @@ p {
   font-size: 125%;
 }
 
-#cost {
-  font-size: 120%;
-  text-align: center;
-}
-
 img {
   margin-right: auto;
   margin-left: auto;
   width: 550px;
   height: 350px;
+}
+
+#cost {
+  font-size: 120%;
+  text-align: center;
 }
 
 .container {
