@@ -7,6 +7,7 @@
 
 body {
   background-color: rgb(129, 68, 68);
+  background-image: url("../img/pizza2.jpg");
 }
 
 h1 {
@@ -15,6 +16,8 @@ h1 {
 }
 
 h3 { 
+  text-align: center;
+  margin-top: center;
   margin-bottom: 25px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
@@ -22,6 +25,19 @@ h3 {
 p {
   text-align: center;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 125%;
+}
+
+#cost {
+  font-size: 120%;
+  text-align: center;
+}
+
+img {
+  margin-right: auto;
+  margin-left: auto;
+  width: 550px;
+  height: 350px;
 }
 
 .container {
@@ -41,13 +57,21 @@ p {
   margin-right: auto;
 }
 
+#toppings {
+  font-size: 150%;
+}
+
+#size {
+  font-size: 150%;
+}
+
 #spacing {
   margin-top: 50px;
 }
 
 .btn {
   margin-left: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .card {
@@ -55,6 +79,10 @@ p {
   margin-right: auto;
   background-color: rgb(129, 68, 68);
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#footer {
+  color: rgb(255, 241, 211);
 }
 
 footer {

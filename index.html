@@ -10,11 +10,16 @@
   <body>
     <h1 class="jumbotron">Chelsea's SFNJ Sizzle Apizza</h1>
     <div class="container">
-      <p id="intro">We are a different kind of pizza parlor. Heavily influenced by the East coast way of pizza-making, we offer thin-crust pizza with super fresh ingredients. Our dough is made in-house and fermented to perfection, our cheese is sourced from pasture-raised, organic cows, and our sauce is made from only USDA Organic tomatoes. Open daily from noon to 9:00 PM.</p>
+      <p id="intro">We are a different kind of pizza parlor. Heavily influenced by the East Coast way of pizza-making, we offer thin-crust pizza with super fresh ingredients. Our dough is made in-house and fermented to perfection, our meats and cheeses are sourced from pasture-raised, organic cows, and our sauce is made from only USDA Organic tomatoes. Open daily from noon to 9:00 PM.</p>
+      <div class="row">
+        <img src="img/pizza3.png" alt="A delicious pizza.">
+      </div>
       <h1>Build your pizza order!</h1>
+      <h3>Starts at $15 for a plain medium pie!</h3>
       <div class="row">
         <div class="col-6" id="spacing">
           <h3>Select Your Toppings</h3>
+          <p id="cost">Plain: No extra charge | Pepperoni: $4 extra | Sausage: $6 extra</p>
           <button type="submit" id="plain" class="btn btn-dark">No Toppings</button>
           <button type="submit" id="pepperoni" class="btn btn-dark">Pepperoni</button>
           <button type="submit" id="sausage" class="btn btn-dark">Sausage</button>
@@ -27,6 +32,7 @@
         </div>
         <div class="col-6" id="spacing">
           <h3>Select Your Size</h3>
+          <p id="cost">Medium: No extra charge | Large: $4 extra</p>
           <button type="submit" id="size-medium" class="btn btn-dark">Medium</button>
           <button type="submit" id="size-large" class="btn btn-dark">Large</button>
           <h3>Your Selected Size</h3>
@@ -54,6 +60,6 @@
     <br>
   </body>
   <footer>
-    <p><strong>Copyright © 2020 Chelsea Becker</strong></p>
+    <p id="footer"><strong>Copyright © 2020 Chelsea Becker</strong></p>
   </footer>
 </html>

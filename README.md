@@ -16,6 +16,7 @@ _This application allows users to build their preferred pizza based on size and 
 3. _Select your pizza size: medium or large._
 4. _Once the topping and size selections are made, click the "Calculate Cost" button below._
 5. _You will find your total pizza cost below the "Calculate Cost" button._
+6. _Click "Reset Pizza Order" to create a new order._
 
 ### View locally (on computer)
 1. _Open web browser and go to https://github.com/cschweig2/chelseas-pizza_
@@ -26,7 +27,8 @@ _This application allows users to build their preferred pizza based on size and 
 
 ## Known Bugs
 
-_You can click the "Calculate Cost" button repeatedly and it will continue adding to the total cost until you click the "Reset Pizza Order" button._
+1. _You can click the "Calculate Cost" button repeatedly and it will continue adding to the total cost until you click the "Reset Pizza Order" button._
+2. _There is not an easy way for the user to switch from having both pepperoni and sausage selected to only have 1 or the other selected. To fix this, I would want to create a topping list that the user can add or delete from._
 
 ## Test Specs
 
