@@ -64,6 +64,12 @@ Describe: addPlain();<br>
 Test: "It will remove the other topping options and replace them with 'plain'."<br>
 Expect(pizzaChoice.addPlain()).toEqual(["plain"]);
 
+Describe: deletePlain();<br>
+
+Test: "It will remove the index where 'plain' is located from the topChoices[] array."<br>
+Expect(pizzaChoice.deletePlain()).toEqual([]);<br>
+
+
 ## Support and contact details
 
 _If you run into any issues, you can contact the creator at cschweig2@gmail.com, or make contributions to the code on GitHub via forking and creating a new branch._
