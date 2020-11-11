@@ -65,10 +65,28 @@ img {
 
 #size {
   font-size: 150%;
+  font-family: sans-serif;
+}
+
+#delPlain {
+  display: none;
+}
+
+#delPepperoni {
+  display: none;
+}
+
+#delSausage {
+  display: none;
 }
 
 #spacing {
   margin-top: 50px;
+}
+
+ul {
+  list-style-type: none;
+  font-family: sans-serif;
 }
 
 .btn {
@@ -90,4 +108,3 @@ img {
 footer {
   text-align: center;
 }
-
