@@ -74,6 +74,10 @@ Describe: deletePepperoni();<br>
 Test: "It will remove the index where 'pepperoni' is located from the topChoices[] array."<br>
 Expect(pizzaChoice.deletePepperoni()).toEqual([]);<br>
 
+Describe: deleteSausage();<br>
+
+Test: "It will remove the index where 'sausage' is located from the topChoices[] array."<br>
+Expect(pizzaChoice.deleteSausage()).toEqual([]);<br>
 
 ## Support and contact details
 
