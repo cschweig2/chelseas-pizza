@@ -3,13 +3,9 @@ class Pizza {
   constructor(size, topping) {
   this.topChoices = [];
   this.size = size;
-  this.totalCost = 12;
+  this.totalCost = 15;
   this.topping = topping;
   }
-
-
-// ANCHOR topping options on UI: plain (no extra charge), pepperoni, and/or sausage
-// ANCHOR pizza size options are medium (no extra charge) and large
 
   addTopping() {
     if (this.topChoices.length <= 2)
@@ -40,7 +36,7 @@ class Pizza {
   }
 
   resetCost() {
-    this.totalCost = 12;
+    this.totalCost = 15;
     this.topChoices = [];
     this.size = "medium";
   }
