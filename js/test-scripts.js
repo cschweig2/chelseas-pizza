@@ -1,66 +1,81 @@
-function Pizza(topping, size) {
+class Pizza {
+
+  constructor(size, topping) {
   this.topChoices = [];
   this.size = size;
   this.totalCost = 15;
   this.topping = topping;
-}
+  }
+
 
 // ANCHOR topping options on UI: plain (no extra charge), pepperoni, and/or sausage
 // ANCHOR pizza size options are medium (no extra charge) and large
-let pizzaChoice = new Pizza("plain", "medium");
 
-Pizza.prototype.addTopping = function() {
-  if (this.topChoices.length <= 2)
-  this.topChoices.push(this.topping);
-  return this.topChoices;
-}
+  addTopping() {
+    if (this.topChoices.length <= 2)
+    this.topChoices.push(this.topping);
+    return this.topChoices;
+  }
 
-// pizzaChoice.addTopping();
+  addPlain() {
+    this.topChoices = [];
+    pizzaChoice.topping = "plain";
+    this.topChoices.push(this.topping);
+    return this.topChoices;
+  }
 
-Pizza.prototype.addPlain = function() {
-  this.topChoices = [];
-  pizzaChoice.topping = "plain";
-  this.topChoices.push(this.topping);
-  return this.topChoices;
-}
-
-// pizzaChoice.topping = "pepperoni";
-
-// pizzaChoice.addTopping();
-
-
-Pizza.prototype.calculateCost = function() {
-  for (i = 0, len = this.topChoices.length; i < len; i++) {
-    if (this.topChoices[i] === "pepperoni") {
+  calculateCost() {
+    for (let i = 0, len = this.topChoices.length; i < len; i++) {
+      if (this.topChoices[i] === "pepperoni") {
+        this.totalCost += 4;
+      }
+      if (this.topChoices[i] === "sausage") {
+        this.totalCost += 6;
+      }
+    }
+    if (this.size === "large") {
       this.totalCost += 4;
     }
-    if (this.topChoices[i] === "sausage") {
-      this.totalCost += 6;
-    }
+    return this.totalCost;
   }
-  if (this.size === "large") {
-    this.totalCost += 4;
+
+  resetCost() {
+    this.totalCost = 12;
+    this.topChoices = [];
+    this.size = "medium";
   }
-  return this.totalCost;
-}
+
+  deletePlain() {
+    for (let i = 0, len = this.topChoices.length; i < len; i++) {
+      if (this.topChoices[i] == "plain") {
+          this.topChoices.splice(this.topChoices.indexOf("plain"), 1);
+          return true;
+        }
+      }
+    return false;
+  }
+
+  deletePepperoni() {
+    for (let i = 0, len = this.topChoices.length; i < len; i++) {
+      if (this.topChoices[i] == "pepperoni") {
+          this.topChoices.splice(this.topChoices.indexOf("pepperoni"), 1);
+          return true;
+        }
+      }
+    return false;
+  }
+
+  deleteSausage() {
+    for (let i = 0, len = this.topChoices.length; i < len; i++) {
+      if (this.topChoices[i] == "sausage") {
+        this.topChoices.splice(this.topChoices.indexOf("sausage"), 1);
+          return true;
+        }
+      }
+    return false;
+  }
+  
+};
 
 
-pizzaChoice.calculateCost();
-
-
-Pizza.prototype.resetCost = function() {
-  this.totalCost = 15;
-  this.topChoices = [];
-  this.size = "medium";
-}
-
-// Pizza.prototype.removeTopping() {
-
-// }
-
-
-// the options trade out 
-// the options selected appear on the page
-// user can delete options?
-// need to make calculated cost appear in correct field on page
-// check console to make sure the cost is being calculated
+let pizzaChoice = new Pizza("medium", "plain");
