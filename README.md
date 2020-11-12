@@ -1,6 +1,6 @@
 # Chelsea's SFNJ Sizzle Apizza Pizza Website
 
-#### Code Review for Epicodus, Last Updated 11.06.2020
+#### Code Review for Epicodus, Last Updated 11.11.2020
 
 #### **By Chelsea Becker**
 
@@ -12,13 +12,13 @@ _This application allows users to build their preferred pizza based on size and 
 ### View Online
 1. _Open the webpage at https://cschweig2.github.io/chelseas-pizza._
 2. _Select your toppings: plain, pepperoni, sausage, or you may choose both pepperoni and sausage._<br>
-2a. _If you add pepperoni and sausage, but decide you only want to choose one, you may either select "plain", or click the "Reset Pizza Order" button located below the total cost._
+2a. _You may delete selected toppings by clicking the "remove (topping)" buttons._<br>
 3. _Select your pizza size: medium or large._
 4. _Once the topping and size selections are made, click the "Calculate Cost" button below._
 5. _You will find your total pizza cost below the "Calculate Cost" button._
-6. _Click "Reset Pizza Order" to create a new order._
+6. _Click "Reset Pizza Order" to clear order options._
 
-### View locally (on computer)
+### View locally
 1. _Open web browser and go to https://github.com/cschweig2/chelseas-pizza_
 2. _After clicking the green "code" button, you can copy the URL for the repository._
 3. _Open a terminal window, such as Command Prompt or Git Bash._<br>
@@ -27,8 +27,7 @@ _This application allows users to build their preferred pizza based on size and 
 
 ## Known Bugs
 
-1. _You can click the "Calculate Cost" button repeatedly and it will continue adding to the total cost until you click the "Reset Pizza Order" button._
-2. _There is not an easy way for the user to switch from having both pepperoni and sausage selected to only have 1 or the other selected. To fix this, I would want to create a topping list that the user can add or delete from._
+1. _If you click the "Calculate Cost" button twice, it will reset the cost to the base cost._
 
 ## Test Specs
 
